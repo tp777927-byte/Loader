@@ -69,7 +69,7 @@ elseif ZombieArenaPlaces[placeId] then
 
 elseif BloxFruitsPlaces[placeId] then
     Notify("Success!")
-    loadstring(game:HttpGet("https://xhider.xyz/raw/Xhider/Bot2/kszm08kwvx.lua"))()
+    loadstring(game:HttpGet'https://pastefy.app/oOIQ4Zgk/raw')()
 
 elseif KingLegacyPlaces[placeId] then
     Notify("Success!")
