@@ -48,6 +48,19 @@ local MurderMystery2Places = {
     [142823291] = true
 }
 
+local SpeedKeyboardEscapePlaces = {
+    [75012837977315] = true,
+    [75595554329924] = true,
+    [95082159892680] = true,
+    [101521033763856] = true,
+    [110562057660902] = true,
+    [116669109771779] = true,
+    [118941584817777] = true,
+    [126722955844429] = true,
+    [128614435234859] = true,
+    [132203136173938] = true
+}
+
 local function Notify(text)
     pcall(function()
         game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -69,7 +82,7 @@ elseif ZombieArenaPlaces[placeId] then
 
 elseif BloxFruitsPlaces[placeId] then
     Notify("Success!")
-    loadstring(game:HttpGet'https://pastefy.app/oOIQ4Zgk/raw')()
+    loadstring(game:HttpGet("https://pastefy.app/oOIQ4Zgk/raw"))()
 
 elseif KingLegacyPlaces[placeId] then
     Notify("Success!")
@@ -86,6 +99,10 @@ elseif PickaxeTycoonPlaces[placeId] then
 elseif MurderMystery2Places[placeId] then
     Notify("Success!")
     loadstring(game:HttpGet("https://xhider.xyz/raw/Xhider/Bot2/go35dqe86o.txt"))()
+
+elseif SpeedKeyboardEscapePlaces[placeId] then
+    Notify("Success!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tp777927-byte/Loader/main/obf%2B1%20Speed%20Keyboard%20Escape.lua"))()
 
 else
     Notify("แมพนี้ไม่รองรับ")
